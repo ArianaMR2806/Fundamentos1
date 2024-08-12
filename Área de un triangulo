@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int b,h,A;
+    cout<<"Ingresar el valor de la base del triangulo:   ";
+    cin>>b;
+    cout<<"Ingresar el valor de la altura del triangulo:  ";
+    cin>>h;
+    A=(b*h)/2;
+    cout<<"El area del triangulo es:  "<<A;
+     return 0;
+}
