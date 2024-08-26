@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   int A,B,C;
+   cout<<"Ingresar el primer numero entero, A: ";
+   cin>>A;
+   cout<<"Ingresar el segundo numero entero, B: ";
+   cin>>B;
+   C=B;
+   B=A;
+   A=C;
+   cout<<"El resultado de A es: "<<A<<" y el resultado de B es: "<<B;
+    return 0;
+}
