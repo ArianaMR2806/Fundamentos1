@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   int años;
+   float sp, ti;
+   cout<<"Ingrese los años que tiene la cuenta activa: ";
+   cin>>años;
+   cout<<"Ingrese el saldo promedio de la cuenta: ";
+   cin>>sp;
+   if(años>3 && sp>5000){
+       ti=3.0;
+   }
+        else if(años>3 && sp<=5000){
+            ti=2.0;
+        }
+        else if(años<3 && sp>5000){
+            ti=2.50;
+        }
+    else{ti=1.50;}
+    cout<<"La tasa de interes aplicable es: "<<ti<<"%"<<endl;
+    return 0;
+}
