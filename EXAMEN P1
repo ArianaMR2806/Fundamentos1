@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float lg,ld,le,ti;
+    cout<<"Ingrese los litros de gasolina: ";
+    cin>>lg;
+    cout<<"Ingrese los litros de diesel: ";
+    cin>>ld;
+    cout<<"Ingrese los litros de etanol: ";
+    cin>>le;
+    ti=(lg*3.50)+(ld*4.0)+(le*2.50);
+    cout<<"El total de ingresos al dia es: "<<ti<<endl;
+    
+
+    return 0;
+}
