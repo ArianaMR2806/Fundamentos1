@@ -1,0 +1,54 @@
+#include <iostream>
+
+using namespace std;
+
+float areacuadrado(float l);
+bool sipuedevotar(int edad);
+bool esPalindromo(streing palabra);
+
+int main()
+{
+    int edad, opcion;
+    string lapalabra;
+    float l;
+    do{
+        cout<<" MENU "<<endl;
+        cout<<"1. Area del cuadrado" <<endl;
+        cout<<"2.Puede votar"<<endl;
+        cout<<"3.Palindromo"<<endl;
+        cout<<"0.Salir"<<endl;
+        cout<<"Ingrese la opcion: ";
+        cin>>opcion;ç
+        switch(opcion){
+        case 1: 
+            do{
+                cout<<"Ingresar el lado: ";
+                cin>>lado;
+            } while(lado<=0);
+            cout<<"El area del cuadrado es: "<<l*l<<endl;
+            break;
+        case 2: 
+            do{
+                cout<<"Ingresar la edad: ";
+                cin>>edad;
+            }while(edad<=0);
+            if(sipuedevotar(edad)==true)
+                cout<<"Puede votar";
+            else
+                cout<<"No puede votar";
+            break;
+        case 3:
+            cout<<"Ingresar la palabra: ";
+            getline(cin, lapabra);
+            if(esPalindromo(lapalabra))
+                cout<<"Es palindromo";
+            else
+                cout<<"No es palindromo";
+            
+            }
+            }
+        }
+    }
+
+    return 0;
+}a
