@@ -1,0 +1,25 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    float X, suma=0;
+    int n;
+    do{
+        cout<<"Ingrese el valor de n: ";
+        cin>>n;
+      
+    }while(n<=0);
+    cout<<"Ingrese el valor de X: ";
+    cin>>X;
+    for(int i=1;i<=n;i++){
+        
+        suma=suma+pow(X,i);
+        cout<<pow(X,i)<<"+";
+    }
+    cout<<endl<<"La suma es: "<<suma;
+
+    return 0;
+}
