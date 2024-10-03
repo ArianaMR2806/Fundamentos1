@@ -1,0 +1,32 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    int n,sp=0, si=0,dig, contpares=0, contimpares=0;
+    do{
+        cout<<"Ingresar el numero: ";
+        cin>>n;
+    }while(n<=0);
+    
+    while(n>0){
+        dig=n%10;
+        n/=10;
+        if(dig%2==0){
+            sp=sp+dig;
+            contpares++; 
+           
+            
+        }else
+        {
+            si=si+dig;
+            contimpares++; 
+        }
+    }
+cout<<"La cantidad de numeros pares es: "<<contpares<<endl<<"La cantidad de numeros impares es: "<<contimpares<<endl;
+cout<<"La suma de numeros pares es: "<<sp<<endl<<"La suma de numeros impares es: "<<si;
+
+    return 0;
+}
