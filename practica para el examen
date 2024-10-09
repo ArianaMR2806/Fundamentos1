@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n,suma=0;
+    cout<<"Ingresar el ultimo numero: ";
+    cin>>n;
+    for(int i=0;i<=n;i++){
+        suma=suma+i;
+    }
+    cout<<"La suma de los numeros es: "<<suma;
+
+    return 0;
+}
