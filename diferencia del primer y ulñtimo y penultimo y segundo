@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	int longitud, d1, d2;
+	string num;
+	cout << "Ingresar un numero: ";
+	getline(cin, num);
+	longitud= num.length(); 
+	for (int i = 0; i < longitud / 2; i++) {
+		d1 = num.at(i) - '0';
+		d2 = num.at(longitud - i - 1) - '0';
+		cout << "La diferencia entre: " << d1 << " y " << d2 << " es:" << abs(d1 - d2) << endl;
+	}
