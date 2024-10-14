@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    float vm;
+    do {
+        cout << "Ingrese la e total de ventas realizadas al mes: ";
+        cin >> n;
+    } while (n < 0);
+    if (n < 10000)
+        cout << "No tiene comision, el total a pagar es: " << n;
+    if (n > 10000 && n < 50000) {
+        vm = n - (n * 0.05);
+    } cout << "Tiene una comision del 5%, ahora el total a pagar es:  " << vm;
+     
+    if (n > 50000) {
+        vm = n - (n * 0.08);
+        cout << "Tiene una comision del 8%, ahora el total a pagar es: " << vm;
+
+    }
+
+
+} 
