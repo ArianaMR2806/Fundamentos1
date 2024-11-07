@@ -1,0 +1,43 @@
+#include <iostream>
+#define MAX 100
+
+using namespace std;
+
+void cargar(int vec[],int tam);
+float suma(int vec[],int tam);
+void mostrar(int vec[],int tam,float s);
+
+
+int main()
+{
+    int n,vec[MAX];
+    float s;
+    cout<<"Ingrese el numero de maquinas: ";
+    cin>>n;
+    cargar(vec,n);
+    s = suma(vec,n);
+    mostrar(vec,n,s);
+
+}
+
+void cargar(int vec[],int tam)
+{
+    for(int i=0;i<tam;i++)
+    {
+       cout<<"Maquina["<<i+1<<"]: ";
+       cin>>vec[i];
+    }
+}
+float suma(int vec[],int tam){
+    float s=0;
+    for(int i=0;i<tam;i++){
+        s=s+vec[i];
+    }
+    return s;
+}
+void mostrar(int vec[],int tam,float s){
+    cout<<"Total de horas trabajadas: "<<s<<endl;
+    for(int i=0;i<tam;i++){
+        cout<<"La maquina ["<<i+1<<"] trabajo: "<<vec[i]*100/s<<"%"<<endl;
+    }
+}
