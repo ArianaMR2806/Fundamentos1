@@ -1,0 +1,40 @@
+#include <iostream>
+#define MAX 100
+
+using namespace std;
+
+void cargar(string produ[], int cant[], int n);
+void mostrar(string produ[], int cant[], int n);
+void burbuja(string produ[], int cant[], int n);
+
+int main() {
+	int num, cantidad[MAX];
+	string product[MAX];
+
+	do {
+		cout<<"Ingrese la cantidad de productos a registrar: ";
+		cin>>num;
+	} while(num<1 || num>MAX);
+    cin.ignore();
+	cargar(product, cantidad, num);
+	mostrar(product, cantidad, num);
+	burbuja(product, cantidad, num);
+}
+void cargar(string produ[], int cant[], int n) {
+	for(int i=0; i<n; i++) {
+		cout<<i+1<< ".    Producto: ";
+		getline(cin,produ[i]);
+		cout<<"\t cantidad de los productos: ";
+		cin>>cant[i];
+		cin.ignore();
+	}
+}
+
+void mostrar(string produ[], int cant[], int n) {
+	cout<<"Producto        \t         Cantidad"<<endl;
+	cout<<"*************************************"<<endl;
+	for(int i=0; i<n; i++) {
+		cout<<i+1<<"."<< produ[i]<<"\t \t"<<cant[i]<<endl;
+	}
+}
+
